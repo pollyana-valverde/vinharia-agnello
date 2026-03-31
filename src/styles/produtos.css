@@ -45,6 +45,9 @@
 }
 
 .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     padding: 0 3rem;
 
     & .search-section {
@@ -119,6 +122,15 @@
                 }
 
             }
+        }
+    }
+
+    & .result-section .result-content{
+        color: var(--gray-600);
+        font-size: 1rem;
+
+        & strong{
+            color: var(--gray-900);
         }
     }
 }
