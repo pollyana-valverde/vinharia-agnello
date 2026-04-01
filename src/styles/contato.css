@@ -1,3 +1,67 @@
-section article h1{
-    margin: auto;
+/* texto inicial depois do cabeçalho */
+.header-contato {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: sans-serif;
 }
+.header-contato h1{
+    font-size: 35px;
+    color: #1a1512;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+.header-contato h2{
+    font-size: 15px;
+    font-weight: 400;
+    color: #777;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+/* bordas de fora */
+.contato-body{
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 16px;
+    padding: 16px;
+    margin: 30px 90px 90px 90px;
+}
+/* config formulário */
+.form-contato{
+    flex: 1.2;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* botão enviar formulário */
+.button-contato{
+    background-color: #1a1512;
+    color: #fff;
+    border: none;
+    padding: 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*config ícones*/
+.icone-img {
+    border: 10px solid #FEF3C6;
+    background-color: #FEF3C6;
+    height: 14px;
+    width: 14px;
+    border-radius: 16px;
+}
+/*config text ícones h2*/
+.icone-h2 {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+/* config text icones h3 */
+
+
+
