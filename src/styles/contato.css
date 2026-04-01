@@ -22,21 +22,19 @@
     margin: 0 auto;
     font-family: sans-serif;
 }
-/* bordas de fora */
+/* bordas de fora do conteudo*/
 .contato-body{
     align-items: center;
     border: 1px solid gray;
     border-radius: 16px;
     padding: 16px;
     margin: 30px 90px 90px 90px;
+    display: flex;
 }
 /* config posição do formulário */
-.form-contato{
-    flex: 1.2;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.forms-contato{
+    display: grid;
+    padding: 20px 20px 20px 80px;
 }
 /* config input formulário*/
 .input-contato{
@@ -57,6 +55,8 @@
     font-weight: bold;
     font-size: 14px;
 }
+/* config posição dos icones/text */
+
 
 /*config ícones*/
 .icone-img {
