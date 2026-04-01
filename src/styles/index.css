@@ -105,3 +105,37 @@
         color: var(--gray-600);
     }
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.texto p {
+    width: 80%;
+    text-indent: 60px;
+    text-align: justify;
+    line-height: 1.6;
+
+}
+
+.imagem {
+    width: 50%;
+    height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: left;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
