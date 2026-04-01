@@ -1,24 +1,163 @@
-.main-container{
+.main-container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding: 3rem;
 
-    & .go-back-container{
+    & .go-back-container {
         display: flex;
         align-items: center;
         gap: .5rem;
 
-        & .go-back-link{
+        & .go-back-link {
             text-decoration: none;
             font-size: 1rem;
             color: var(--gray-600);
 
             transition: color 0.3s ease;
 
-            &:hover{
+            &:hover {
                 color: var(--gray-800);
                 text-decoration: underline;
+            }
+        }
+    }
+
+    & .detailed-info-container {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+
+        & .produto-image {
+            width: 30rem;
+            height: 38.75rem;
+            object-fit: cover;
+            border-radius: 1.5rem;
+        }
+
+        & .detailed-info-body {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            & .info-header {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                & .info-title {
+                    font-size: 3rem;
+                    font-weight: 500;
+                    color: var(--gray-900);
+                }
+
+                & .info-subtitle {
+                    font-size: 1.25rem;
+                    color: var(--gray-600);
+                }
+            }
+
+            & .info-price {
+                font-size: 2.25rem;
+                font-weight: 600;
+                color: var(--gray-900);
+            }
+
+            & .info-description {
+                font-size: 1.125rem;
+                color: var(--gray-700);
+            }
+
+            & .additional-info-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+
+                & .info-card {
+                    display: flex;
+                    gap: 1rem;
+
+                    background-color: var(--gray-100);
+                    border-radius: .875rem;
+
+                    padding: 1rem;
+
+                    & .info-card-icon {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+
+                    & .info-card-content {
+                        display: flex;
+                        flex-direction: column;
+                        gap: .25rem;
+
+                        & .info-card-title {
+                            font-size: 1rem;
+                            color: var(--gray-900);
+                        }
+
+                        & .info-card-description {
+                            font-size: .875rem;
+                            color: var(--gray-700);
+                        }
+                    }
+                }
+            }
+
+            & .info-action-container {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin-top: 1rem;
+
+                background-color: var(--white);
+                border: 1px solid var(--gray-200);
+                border-radius: 1rem;
+
+                padding: 1rem;
+
+                & .action-add-more {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    background-color: var(--gray-100);
+                    border: 1px solid var(--gray-300);
+                    border-radius: .875rem;
+
+                    & .add-more-button {
+                        padding: .75rem 1.25rem;
+                        background-color: transparent;
+                        border: none;
+
+                        font-size: 1.25rem;
+                        color: var(--gray-600);
+                    }
+
+                    & .add-more-label {
+                        font-size: 1rem;
+                        font-weight: 600;
+                        color: var(--gray-900);
+                    }
+                }
+
+                & .action-button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: .75rem;
+                    flex: 1;
+
+                    padding: .875rem;
+
+                    font-size: 1.125rem;
+                    color: var(--white);
+
+                    background-color: var(--gray-900);
+                    border: none;
+                    border-radius: .875rem;
+                }
             }
         }
     }

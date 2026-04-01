@@ -141,7 +141,7 @@
 
         & .produto-card {
             background-color: var(--white);
-            border: 1px solid var(--gray-200);
+            border: 1px solid var(--gray-100);
             border-radius: 1rem;
 
             max-width: 23.75rem;
