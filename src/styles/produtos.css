@@ -128,6 +128,8 @@
     & .result-section .result-content {
         color: var(--gray-600);
         font-size: 1rem;
+        font-weight: 300;
+        font-family: sans-serif;
 
         & strong {
             color: var(--gray-900);
@@ -171,15 +173,17 @@
 
                         font-size: .75rem;
                         font-weight: 600;
-
+                        font-family: sans-serif;
+                        
                         &.primary {
                             left: 1rem;
-
+                            
                             background-color: var(--orange-400);
                         }
-
+                        
                         &.secondary {
                             right: 1rem;
+                            letter-spacing: 1.2px;
 
                             background-color: var(--gray-900);
                         }
@@ -203,6 +207,8 @@
                     align-items: center;
                     justify-content: space-between;
                     gap: .5rem;
+
+                    font-family: sans-serif;
 
                     & .wine-type {
                         padding: .25rem .5rem;
@@ -231,7 +237,11 @@
 
                 & .produto-description {
                     font-size: .875rem;
+                    font-family: sans-serif;
+                    font-weight: 300;
                     color: var(--gray-800);
+
+                    line-height: 140%;
                 }
 
                 & .produto-price {
@@ -242,6 +252,7 @@
 
                     & .price-label {
                         font-size: .75rem;
+                        font-family: sans-serif;
                         color: var(--gray-800);
                         text-transform: uppercase;
                     }
@@ -249,6 +260,7 @@
                     & .price-value {
                         font-size: 1.5rem;
                         font-weight: 600;
+                        font-family: sans-serif;
                         color: var(--gray-900);
                     }
                 }

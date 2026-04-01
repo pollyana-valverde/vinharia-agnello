@@ -12,6 +12,7 @@
         & .go-back-link {
             text-decoration: none;
             font-size: 1rem;
+            font-family: sans-serif;
             color: var(--gray-600);
 
             transition: color 0.3s ease;
@@ -53,6 +54,8 @@
 
                 & .info-subtitle {
                     font-size: 1.25rem;
+                    font-family: sans-serif;
+                    font-weight: 300;
                     color: var(--gray-600);
                 }
             }
@@ -60,12 +63,16 @@
             & .info-price {
                 font-size: 2.25rem;
                 font-weight: 600;
+                font-family: sans-serif;
                 color: var(--gray-900);
             }
 
             & .info-description {
                 font-size: 1.125rem;
+                font-weight: 300;
+                font-family: sans-serif;
                 color: var(--gray-700);
+                line-height: 160%;
             }
 
             & .additional-info-container {
@@ -94,11 +101,17 @@
 
                         & .info-card-title {
                             font-size: 1rem;
+                            font-weight: 500;
+                            font-family: sans-serif;
                             color: var(--gray-900);
                         }
 
                         & .info-card-description {
                             font-size: .875rem;
+                            font-weight: 300;
+                            font-family: sans-serif;
+                            line-height: 140%;
+                            
                             color: var(--gray-700);
                         }
                     }
@@ -144,6 +157,7 @@
                     & .add-more-label {
                         font-size: 1rem;
                         font-weight: 600;
+                        font-family: sans-serif;
                         color: var(--gray-900);
                     }
                 }
@@ -208,6 +222,7 @@
                     text-align: left;
 
                     font-size: 1rem;
+                    font-family: sans-serif;
                     font-weight: 500;
                     color: var(--gray-600);
                     background-color: var(--gray-100);
@@ -226,6 +241,7 @@
                     text-align: left;
 
                     font-size: 1rem;
+                    font-family: sans-serif;
                     color: var(--gray-900);
                 }
             }
