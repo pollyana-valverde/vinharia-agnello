@@ -174,13 +174,13 @@
                         font-size: .75rem;
                         font-weight: 600;
                         font-family: sans-serif;
-                        
+
                         &.primary {
                             left: 1rem;
-                            
+
                             background-color: var(--orange-400);
                         }
-                        
+
                         &.secondary {
                             right: 1rem;
                             letter-spacing: 1.2px;
@@ -242,6 +242,13 @@
                     color: var(--gray-800);
 
                     line-height: 140%;
+
+                    /* Limita a descrição a 3 linhas e adiciona reticências se ultrapassar */
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                    line-clamp: 3;
                 }
 
                 & .produto-price {

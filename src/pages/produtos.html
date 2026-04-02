@@ -71,52 +71,12 @@
 
         <!-- Seção de resultados -->
         <section class="result-section">
-            <span class="result-content">Mostrando <strong>6</strong> resultados</span>
+            <span class="result-content" id="result"></span>
         </section>
 
         <!-- Seção de produtos -->
-        <section class="produtos-section">
+        <section class="produtos-section" id="produtos-section">
             <!-- Card de produto -->
-            <div class="produto-card">
-                <div class="produto-header">
-                    <div class="produto-tag-container">
-                        <span class="tag primary">Destaque</span>
-                        <span class="tag secondary">2021</span>
-                    </div>
-
-                    <img class="produto-image" src="../assets/images/agnello-rose.png" alt="Imagem do produto">
-                </div>
-
-                <div class="produto-body">
-                    <div class="produto-badge-container">
-                        <span class="wine-type">Tinto seco</span>
-                        <span class="grape-type">Pinot Noir</span>
-                    </div>
-
-                    <h2 class="produto-name">Agnello Clássico</h2>
-                    <p class="produto-description">Um vinho redondo, com taninos macios e acidez equilibrada. Traz
-                        aromas frutados que marcam o paladar.</p>
-
-                    <div class="produto-price">
-                        <span class="price-label">Preço</span>
-                        <h3 class="price-value">R$ 120,00</h3>
-                    </div>
-                </div>
-
-                <div class="produto-action">
-                    <a href="./detalhe-produto.html">
-                        <button class="action-button primary" type="button">
-                            <img src="../assets/icons/eye.svg" alt="Ícone de olho" class="button-icon">
-                            Detalhes</button>
-                    </a>
-                    <a href="./carrinho-compra.html">
-                        <button type="button" class="action-button secondary">
-                            <img src="../assets/icons/cart.svg" alt="Ícone de carrinho" class="button-icon">
-                            Comprar
-                        </button>
-                    </a>
-                </div>
-            </div>
         </section>
     </main>
 
@@ -127,6 +87,8 @@
             espera por você.</p>
         <span class="footer-copy">&copy; 2026 Vinharia Agnello. Todos os direitos reservados.</span>
     </footer>
+
+    <script type="module" src="../scripts/produtos.js"></script>
 </body>
 
 </html>
