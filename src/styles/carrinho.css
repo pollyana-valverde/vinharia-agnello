@@ -1,0 +1,36 @@
+body {
+  font-family: 'Jost', sans-serif;
+  background: #FAFAF8;
+  margin: 0;
+}
+
+header {
+  background: #1A1A1A;
+  color: white;
+  padding: 15px;
+}
+
+.logo-text {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.cart-layout {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.cart-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+aside {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
