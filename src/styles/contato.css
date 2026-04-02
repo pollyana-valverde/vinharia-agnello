@@ -25,20 +25,27 @@
 /* bordas de fora do conteudo*/
 .contato-body{
     align-items: center;
-    border: 1px solid gray;
+    border: 1px solid #E7E5E4;
     border-radius: 16px;
     padding: 16px;
     margin: 30px 90px 90px 90px;
     display: flex;
+    background-color: #FAFAF9;
 }
 /* config posição do formulário */
 .forms-contato{
     display: grid;
     padding: 20px 20px 20px 80px;
 }
+/* config label em cima do input */
+.forms-contato label{
+    font-size: 14px;
+    font-family: Bold;
+}
 /* config input formulário*/
 .input-contato{
     margin-top: 5px;
+    margin-bottom: 20px;
     align-items: center;
     border: 1px solid gray;
     border-radius: 16px;
@@ -47,6 +54,7 @@
 
 /* botão enviar formulário */
 .button-contato{
+    margin-top: 20px;
     background-color: #1a1512;
     color: #fff;
     border: none;
@@ -55,10 +63,7 @@
     font-weight: bold;
     font-size: 14px;
 }
-/* config posição dos icones/text */
-
-
-/*config ícones*/
+/*config ícones img*/
 .icone-img {
     border: 10px solid #FEF3C6;
     background-color: #FEF3C6;
@@ -67,11 +72,29 @@
     border-radius: 16px;
 }
 /*config text ícones h2*/
-.icone-h2 {
-    font-size: 20px;
+.icones-contato h2 {
+    font-size: 15px;
     font-family: sans-serif;
+    margin: 10px 10px;
+    max-width: 200px;
 }
 /* config text icones h3 */
-
-
-
+.icones-contato h3{
+    font-size: 10px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    max-width: 100px ;
+    color: #777;
+}
+/* condig posição dos icones */
+.contato-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* config img grande */
+.grande-img{
+    display: flex;
+    flex-direction: row-reverse+column;
+    align-items: stretch;
+}
