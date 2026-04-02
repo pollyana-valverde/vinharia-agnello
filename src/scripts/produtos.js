@@ -1,15 +1,18 @@
 import { produtosLista } from "../utils/produtos-lista.js";
 
-const produtosSection = document.getElementById("produtos-section");
+const produtosSearchInput = document.getElementById("search-input");
 const produtosResult = document.getElementById("result");
+const produtosSection = document.getElementById("produtos-section");
 
-produtosResult.innerHTML = `Mostrando <strong>${produtosLista.length}</strong> resultados`;
+function renderizarProdutos(produtos) {
+    produtosSection.innerHTML = "";
+    produtosResult.innerHTML = `Mostrando <strong>${produtos.length}</strong> resultados`;
 
-produtosLista.forEach(produto => {
-    const produtoCard = document.createElement("div");
-    produtoCard.classList.add("produto-card");
+    produtos.forEach(produto => {
+        const produtoCard = document.createElement("div");
+        produtoCard.classList.add("produto-card");
 
-    produtoCard.innerHTML = `
+        produtoCard.innerHTML = `
         <div class="produto-header">
             <div class="produto-tag-container">
                 ${produto.tags.destaque ? '<span class="tag primary">Destaque</span>' : ''}
@@ -50,5 +53,18 @@ produtosLista.forEach(produto => {
         </div>
     `
 
-    produtosSection.appendChild(produtoCard);
+        produtosSection.appendChild(produtoCard);
+    });
+}
+
+// Renderizar todos os produtos inicialmente
+renderizarProdutos(produtosLista);
+
+// Filtro de busca por nome
+produtosSearchInput.addEventListener("input", (e) => {
+    const query = e.target.value.toLowerCase();
+    const produtosFiltrados = produtosLista.filter(produto =>
+        produto.name.toLowerCase().includes(query)
+    );
+    renderizarProdutos(produtosFiltrados);
 });
