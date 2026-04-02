@@ -60,12 +60,12 @@ h2 {
 
 .timeline::before {
     content: "";
-    position:absolute;
+    position: absolute;
     left: 7px;
     top: 0;
     width: 2px;
     height: 100%;
-    background-color:#FE9A00;
+    background-color: #FE9A00;
 }
 
 .timeline-item {
@@ -75,12 +75,12 @@ h2 {
 }
 
 .timeline-dot {
-    position:absolute;
+    position: absolute;
     left: 2px;
     top: 5px;
     width: 12px;
     height: 12px;
-    background-color:#FE9A00;
+    background-color: #FE9A00;
     border-radius: 50px;
 }
 
