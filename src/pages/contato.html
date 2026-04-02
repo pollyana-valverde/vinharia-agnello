@@ -7,7 +7,7 @@
 
     <!-- link para o arquivo CSS principal padrão -->
     <link rel="stylesheet" href="../styles/index.css">
-
+    <link rel="stylesheet" href="../styles/contato.css">
     <title>Contato</title>
 </head>
 
@@ -41,7 +41,46 @@
         </nav>
     </header>
 
-    <h1>Contato</h1>
+    <section class="contato-container"><!--Inicio do projeto contato-->
+        <div class="header-contato">
+            <h1>Entre em Contato</h1>
+            <h2>Agende sua visita com degustação na Vinheria Agnello, tire dúvidas sobre nossos rótulos ou encomende suas garrafas de vinho diretamente da nossa adega.</h2>
+        </div>
+
+        <div class="contato-body">
+
+            <div class="espaco-img"> <!-- foto grande do lado esquerdo -->
+                <img class="grande-img" src="../assets/images/contato-img.png" width="425px" height="604px"">
+            </div>
+
+            <div class="icones-contato">
+                <img class="icone-img" src="../assets/icons/location.svg">
+                <h2>ENDEREÇO</h2>
+                <h3>Vale dos Vinhedos, RS Estrada do Vinho, km 5, Lote 42</h3>
+
+                <img class="icone-img" src="../assets/icons/clock.svg">
+                <h2>HORÁRIO DE FUNCIONAMENTO</h2>
+                <h3>Terça a Domingo 09:00h às 18:00h</h3>
+
+                <img class="icone-img" src="../assets/icons/phone.svg"">
+                <h2>TELEFONE & RESERVAS</h2>
+                <h3>(54) 3456-7890 contato@vinheriaagnello.com.br </h3>
+            </div>
+
+            <form class="forms-contato"> <!--Formulário para contato-->
+                <label for="nome_completo">Nome Completo : </label> <br>
+                <input class="input-contato" type="text" name="nome_completo" placeholder="Ex : Nome Sobrenome"> <br><br>
+                <label for="email">E-mail : </label> <br>
+                <input class="input-contato" type="text" name="email" placeholder="Ex : exemplo@email.com"> <br><br>
+                <label for="duvidas">Mensagem ou Dúvida : </label> <br>
+                <textarea class="input-contato" name="duvidas" placeholder="Digite sua mensagem aqui..."></textarea> <br><br>
+
+                <button class="button-contato" type="submit">
+                    Enviar Informações
+                </button> 
+            </form>
+        </div>        
+    </section>
 
     <!-- Rodapé (Footer) -->
     <footer class="footer-container">
