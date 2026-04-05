@@ -3,7 +3,9 @@ import { produtosLista } from "../utils/produtos-lista.js";
 const produtosSearchInput = document.getElementById("search-input");
 const produtosResult = document.getElementById("result");
 const produtosSection = document.getElementById("produtos-section");
+const addVinho = document.getElementById("add-vinho");
 
+// Função para renderizar os produtos na página
 function renderizarProdutos(produtos) {
     produtosSection.innerHTML = "";
     produtosResult.innerHTML = `Mostrando <strong>${produtos.length}</strong> resultados`;
@@ -67,4 +69,44 @@ produtosSearchInput.addEventListener("input", (e) => {
         produto.name.toLowerCase().includes(query)
     );
     renderizarProdutos(produtosFiltrados);
+});
+
+// Função para solicitar um campo do usuário, garantindo que seja preenchido
+function solicitarCampo(mensagem) {
+    while (true) {
+        const valor = prompt(mensagem);
+
+        // Usuário cancelou
+        if (valor === null) return null;
+
+        // Aceita apenas texto não vazio
+        if (valor.trim() !== "") return valor.trim();
+
+        alert("Valor inválido. Tente novamente.");
+    }
+}
+
+// Evento para adicionar um novo vinho
+addVinho.addEventListener("click", () => {
+    const nomeVinho = solicitarCampo("Digite o nome do vinho:");
+    if (nomeVinho === null) return;
+
+    const tipoVinho = solicitarCampo("Digite o tipo do vinho:");
+    if (tipoVinho === null) return;
+
+    const safraVinho = solicitarCampo("Digite a safra do vinho:");
+    if (safraVinho === null) return;
+
+    const quantidadeVinho = solicitarCampo("Digite a quantidade em estoque do vinho:");
+    if (quantidadeVinho === null) return;
+
+    alert(`Vinho "${nomeVinho}" adicionado com sucesso! Veja os detalhes no console.`);
+
+    console.log(
+        `Informações do vinho:
+      Nome: ${nomeVinho}
+      Tipo: ${tipoVinho}
+      Safra: ${safraVinho}
+      Quantidade em estoque: ${quantidadeVinho}`
+    );
 });
