@@ -1,0 +1,132 @@
+/* Efeitos página de carrinho */
+
+.cart-item:first-child {
+    padding-top: 0;
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.qty-btn:hover {
+    background: var(--dark);
+    color: var(--white);
+}
+
+.delete-btn:hover {
+    color: var(--red);
+    background: #fdf0ef;
+}
+
+.checkout-btn:hover {
+    background: #333;
+    transform: translateY(-1px);
+}
+
+.coupon-input:focus {
+    border-color: var(--gold);
+}
+
+.coupon-apply:hover {
+    background: var(--dark);
+    color: var(--white);
+}
+
+/* Efeitos página de contato */
+.input-contato:focus-visible {
+    outline: none;
+    border-color: var(--orange-400);
+    box-shadow: 0 0 0 2px rgba(254, 154, 0, 0.2);
+}
+
+.button-contato:hover {
+    transform: scale(0.98);
+}
+
+/* Efeitos página de galeria */
+.galeria-container img:hover {
+    transform: scale(1.02);
+}
+
+/* Efeitos página de home e produtos */
+.banner-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.main-container .history-call-section .history-call-body .history-call-link:hover {
+    color: var(--orange-600);
+    border-color: var(--orange-600);
+    gap: .75rem;
+}
+
+.main-container .search-section .filters-container .filter-button:hover {
+    background-color: var(--gray-200);
+}
+
+.main-container .search-section .search-input-container .search-input::placeholder {
+    color: var(--gray-500);
+}
+
+.main-container .search-section .search-input-container .search-input:focus {
+    outline: none;
+}
+
+.main-container .search-section .add-vinho-btn:hover {
+    background-color: var(--orange-800);
+    border-color: var(--orange-800);
+}
+
+.main-container .produto-card .produto-action a .action-button.primary:hover {
+    transform: scale(0.99);
+    background-color: var(--gray-200);
+}
+
+.main-container .produto-card .produto-action a .action-button.secondary:hover {
+    transform: scale(0.99);
+    background-color: var(--orange-800);
+    border-color: var(--orange-800);
+}
+
+/* Efeitos página de detalhes do produto */
+.main-container .go-back-container .go-back-link:hover {
+    color: var(--gray-800);
+    text-decoration: underline;
+}
+
+.main-container .detailed-info-container .detailed-info-body .info-action-container .action-add-more .add-more-button:hover {
+    color: var(--gray-900);
+}
+
+.main-container .detailed-info-container .detailed-info-body .info-action-container .action-button:hover {
+    opacity: 0.9;
+}
+
+.main-container .technical-info-container .info-table .info-container:not(:first-child) {
+    border-top: 1px solid var(--gray-200);
+}
+
+/* Efeitos página de sobre nós */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #FE9A00;
+}

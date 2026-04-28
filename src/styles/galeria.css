@@ -16,6 +16,7 @@
 .galeria-container img{
     object-fit: cover;
     border-radius: 16px;
+    transition: transform 0.3s ease;
 }
     .galeria-imagens {
         display: flex;

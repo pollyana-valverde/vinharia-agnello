@@ -29,10 +29,57 @@ vinharia-agnello/
 │   │   ├── detalhe-produto.html
 │   │   └── carrinho-compra.html
 │   ├── styles/                # Arquivos de estilo CSS
-│   │   └── index.css
+│   │   ├── index.css          # CSS principal
+│   │   ├── efeitos.css        # Efeitos visuais (pseudo-classes, pseudo-elementos, animações, transformações)
+│   │   ├── home.css
+│   │   ├── produtos.css
+│   │   ├── detalhes-produto.css
+│   │   ├── carrinho-compra.css
+│   │   ├── contato.css
+│   │   ├── sobre-nos.css
+│   │   ├── colors.css
+│   │   └── galeria.css
 │   └── scripts/               # Arquivos JavaScript
-│       └── index.js
+│       ├── index.js
+│       └── produtos.js
 ```
+
+## Efeitos Visuais
+
+A partir da segunda iteração do projeto, foram implementados efeitos visuais em CSS no arquivo `src/styles/efeitos.css` para melhorar a experiência do usuário e adicionar interatividade ao site.
+
+### 🎯 Pseudo-classes Aplicadas (3)
+- **`:hover`** - Mudança de cor e transformações em links, botões e ícones
+- **`:focus`** - Outline em inputs de formulário
+- **`:first-child`** - Padding especial no primeiro item do carrinho
+
+### 🎨 Pseudo-elementos Aplicados (2)
+- **`::before`** - Linha decorativa vertical na timeline (página Sobre Nós)
+- **`::after`** - Overlay escuro nos banners das páginas
+
+### 💫 Animações (@keyframes) Implementadas
+- **`fadeSlideIn`** - Animação de fade in com translateY para itens do carrinho
+
+### 🎢 Transformações CSS Implementadas (2)
+- **`scale()`** - Redimensionamento de botões em hover (0.99, 0.98)
+- **`translateY()`** - Movimentação vertical em animações (12px)
+
+### 🔄 Transições Aplicadas
+- Links de navegação: color 0.3s ease
+- Links de história: all 0.2s ease
+- Botões de filtro: background-color 0.3s ease + transform 0.2s ease
+- Botão adicionar vinho: background-color 0.2s ease + transform 0.2s ease
+- Botões de quantidade: background 0.15s + color 0.15s + transform 0.2s ease
+- Botão deletar: color 0.15s + background 0.15s
+- Input de busca: outline 0.2s ease
+
+### 📍 Elementos com Efeitos
+- **Navbar**: Links com mudança de cor em hover
+- **Banners**: Overlay com pseudo-elemento ::after
+- **Botões**: Scale em hover e transições suaves
+- **Carrinho**: Animação fadeSlideIn em itens
+- **Timeline (Sobre Nós)**: Linha vertical decorativa com ::before
+- **Formulários**: Transições em inputs
 
 ## Integrantes
 

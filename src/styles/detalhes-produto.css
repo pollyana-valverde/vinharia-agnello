@@ -17,10 +17,6 @@
 
             transition: color 0.3s ease;
 
-            &:hover {
-                color: var(--gray-800);
-                text-decoration: underline;
-            }
         }
     }
 
@@ -148,10 +144,6 @@
                         color: var(--gray-600);
 
                         transition: color 0.3s ease;
-
-                        &:hover {
-                            color: var(--gray-900);
-                        }
                     }
 
                     & .add-more-label {
@@ -178,11 +170,7 @@
                     border: none;
                     border-radius: .875rem;
 
-                    transition: opacity 0.3s ease;
-
-                    &:hover {
-                        opacity: 0.9;
-                    }
+                    transition: opacity 0.3s ease;                   
                 }
             }
         }
@@ -212,10 +200,6 @@
             & .info-container {
                 display: grid;
                 grid-template-columns: 1fr 2fr;
-
-                &:not(:first-child) {
-                    border-top: 1px solid var(--gray-200);
-                }
 
                 & .info-table-header {
                     padding: 1rem 1.5rem;

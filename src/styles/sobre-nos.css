@@ -58,16 +58,6 @@ h2 {
     margin-left: 20px;
 }
 
-.timeline::before {
-    content: "";
-    position: absolute;
-    left: 7px;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    background-color: #FE9A00;
-}
-
 .timeline-item {
     position: relative;
     margin-bottom: 30px;
